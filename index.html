@@ -11,11 +11,15 @@
 
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
+      <a-assets>
+        <img id="tree" rotation="0 0 90" src="tree.png" alt="">
+      </a-assets>
       <!-- create your content here. just a box for now -->
       <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+      <!--yooooo-->
+      <a-image rotation='-90 0 0' src='#tree'> </a-image>
       <!-- define a camera which will move according to the marker position -->
       <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
   </body>
-
 </html>
